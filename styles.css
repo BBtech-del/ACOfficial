@@ -12,9 +12,9 @@
     --medium-gray: #2a2a2a;
     --light-gray: #888888;
     --white: #ffffff;
-    --teal: #2C7A7B;
-    --teal-light: #3D9B9C;
-    --teal-dark: #1F5757;
+    --teal: #00BCD4;
+    --teal-light: #26C6DA;
+    --teal-dark: #00ACC1;
 }
 
 body {
@@ -88,7 +88,7 @@ body {
 .nav-cta:hover {
     background: var(--teal-light);
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(44, 122, 123, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 188, 212, 0.3);
 }
 
 /* Hero Section */
@@ -106,7 +106,7 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(44, 122, 123, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 188, 212, 0.05) 0%, transparent 70%);
     animation: pulse 8s ease-in-out infinite;
 }
 
@@ -122,7 +122,7 @@ body {
 
 .hero-badge {
     display: inline-block;
-    background: rgba(44, 122, 123, 0.1);
+    background: rgba(0, 188, 212, 0.1);
     border: 1px solid var(--teal);
     color: var(--teal);
     padding: 8px 20px;
@@ -210,7 +210,7 @@ body {
 .cta-primary:hover {
     background: var(--teal-light);
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(44, 122, 123, 0.4);
+    box-shadow: 0 15px 40px rgba(0, 188, 212, 0.4);
 }
 
 .hero-disclaimer {
@@ -289,7 +289,7 @@ body {
 
 .problem-card:hover {
     background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(44, 122, 123, 0.3);
+    border-color: rgba(0, 188, 212, 0.3);
     transform: translateY(-5px);
 }
 
@@ -321,7 +321,7 @@ body {
 
 .solution-item:hover {
     background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(44, 122, 123, 0.3);
+    border-color: rgba(0, 188, 212, 0.3);
 }
 
 .solution-number {
@@ -381,8 +381,8 @@ body {
 /* Guarantee Section */
 .section-guarantee {
     background: linear-gradient(135deg, var(--near-black) 0%, var(--dark-gray) 100%);
-    border-top: 1px solid rgba(44, 122, 123, 0.2);
-    border-bottom: 1px solid rgba(44, 122, 123, 0.2);
+    border-top: 1px solid rgba(0, 188, 212, 0.2);
+    border-bottom: 1px solid rgba(0, 188, 212, 0.2);
 }
 
 .guarantee-box {
@@ -390,7 +390,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 60px;
-    background: rgba(44, 122, 123, 0.05);
+    background: rgba(0, 188, 212, 0.05);
     border: 2px solid var(--teal);
     border-radius: 16px;
 }
@@ -472,7 +472,7 @@ body {
 }
 
 .calc-result.highlight {
-    background: rgba(44, 122, 123, 0.1);
+    background: rgba(0, 188, 212, 0.1);
     border-color: var(--teal);
 }
 
