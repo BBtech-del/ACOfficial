@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions - AVACompli</title>
+    <meta name="description" content="Common questions about AVACompli's AI compliance platform, pricing, implementation, and services for Fortune 1000 companies.">
+    <meta name="keywords" content="AVACompli FAQ, compliance platform questions, SOC 2 compliance cost, HIPAA compliance pricing, compliance implementation timeline">
+    <meta name="author" content="AVACompli">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/k4rLfHQQ/Screenshot-2025-09-16-174320.png">
+    <link rel="apple-touch-icon" href="https://i.postimg.cc/k4rLfHQQ/Screenshot-2025-09-16-174320.png">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AVACompli - Frequently Asked Questions">
+    <meta property="og:description" content="Get answers about AVACompli's compliance platform for Fortune 1000 companies.">
+    <meta property="og:url" content="https://www.avacompli.com/faq.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.postimg.cc/N0kgd7qR/AVAlog1transp.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        .faq-hero {
+            padding: 180px 0 80px;
+            text-align: center;
+            background: var(--near-black);
+        }
+        
+        .faq-hero h1 {
+            font-size: 56px;
+            font-weight: 900;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .faq-hero p {
+            font-size: 20px;
+            color: var(--light-gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        
+        .faq-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(0, 188, 212, 0.3);
+        }
+        
+        .faq-question {
+            padding: 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--white);
+            margin: 0;
+            padding-right: 20px;
+        }
+        
+        .faq-icon {
+            font-size: 24px;
+            color: var(--teal);
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 1000px;
+        }
+        
+        .faq-answer-content {
+            padding: 0 30px 30px 30px;
+            color: var(--light-gray);
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        .faq-answer-content p {
+            margin-bottom: 15px;
+        }
+        
+        .faq-answer-content ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        
+        .faq-answer-content li {
+            margin-bottom: 10px;
+        }
+        
+        .faq-answer-content strong {
+            color: var(--white);
+        }
+        
+        .faq-cta {
+            background: linear-gradient(135deg, var(--near-black) 0%, var(--dark-gray) 100%);
+            border: 2px solid var(--teal);
+            padding: 60px;
+            border-radius: 16px;
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        .faq-cta h2 {
+            font-size: 36px;
+            font-weight: 900;
+            color: var(--teal);
+            margin-bottom: 20px;
+        }
+        
+        .faq-cta p {
+            font-size: 18px;
+            color: var(--light-gray);
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">
+                        <span class="logo-ava">AVA</span><span class="logo-compli">Compli</span>
+                    </a>
+                    <span class="logo-tagline">The Black Card of Compliance</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FAQ Hero -->
+    <section class="faq-hero">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Everything you need to know about AVACompli's AI compliance platform for Fortune 1000 companies</p>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="faq-container">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <h3>What is AVACompli and who is it for?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>AVACompli is a complete AI-powered compliance platform designed exclusively for Fortune 1000 companies and large enterprises operating in highly regulated industries. We deliver end-to-end compliance solutions including mobile digitization of archives, automated multilingual training video production, AI compliance intelligence, on-site audit support, and continuous monitoring.</p>
+                    <p><strong>Ideal clients have:</strong></p>
+                    <ul>
+                        <li>1,000+ employees (minimum requirement)</li>
+                        <li>Global operations with multilingual workforces</li>
+                        <li>$30M+ annual compliance budgets</li>
+                        <li>Regular audits (FDA, SEC, FINRA, ISO, etc.)</li>
+                        <li>Operations in highly regulated industries (pharma, healthcare, financial services, manufacturing, aerospace, government contracting)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <h3>How much does AVACompli cost?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>AVACompli's pricing is <strong>$15,000 per employee per year</strong>. This all-inclusive fee covers:</p>
+                    <ul>
+                        <li>Complete mobile digitization of your paper archives (all global locations)</li>
+                        <li>Unlimited AI-generated compliance training videos in 100+ languages</li>
+                        <li>Multilingual AI compliance intelligence system</li>
+                        <li>Quarterly on-site compliance architect support during audits</li>
+                        <li>Attestation and audit intelligence platform</li>
+                        <li>White-glove concierge service with 15-minute SLA</li>
+                    </ul>
+                    <p><strong>Minimum engagement:</strong> 1,000 employees ($15M annually)</p>
+                    <p>For a 5,000-employee organization, the annual investment is $75M—typically representing a $25M+ savings compared to current compliance costs.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <h3>What's included in the $15K per employee fee?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Everything you need for complete compliance management:</p>
+                    <p><strong>1. Mobile Digitization Factory:</strong></p>
+                    <ul>
+                        <li>On-site teams deployed to all your global offices</li>
+                        <li>Enterprise-grade OCR scanning of 40-year archives</li>
+                        <li>AI indexing in 100+ languages</li>
+                        <li>Secure chain of custody documentation</li>
+                    </ul>
+                    <p><strong>2. AI Training Video Studio:</strong></p>
+                    <ul>
+                        <li>50+ custom training videos generated annually</li>
+                        <li>Automatic updates when regulations change</li>
+                        <li>Professional voiceovers in 100+ languages</li>
+                        <li>90-second generation time per video</li>
+                    </ul>
+                    <p><strong>3. Multilingual AI Intelligence:</strong></p>
+                    <ul>
+                        <li>Unlimited text queries in any language</li>
+                        <li>Trained on 100 million pages of YOUR documentation</li>
+                        <li>Mobile, desktop, and phone integration</li>
+                        <li>24/7/365 availability</li>
+                    </ul>
+                    <p><strong>4. On-Site Compliance Architects:</strong></p>
+                    <ul>
+                        <li>Present at ALL global offices during audits (quarterly)</li>
+                        <li>Document retrieval in 30 seconds</li>
+                        <li>Pre-audit readiness assessments</li>
+                        <li>Reduces 5-day audits to 1.5 days</li>
+                    </ul>
+                    <p><strong>5. Attestation & Audit Intelligence:</strong></p>
+                    <ul>
+                        <li>Automated quiz generation</li>
+                        <li>Predictive audit readiness scoring</li>
+                        <li>Real-time compliance dashboards</li>
+                        <li>Regulatory change monitoring</li>
+                    </ul>
+                    <p><strong>6. White-Glove Concierge:</strong></p>
+                    <ul>
+                        <li>Named compliance architect</li>
+                        <li>15-minute priority response SLA</li>
+                        <li>Quarterly executive business reviews</li>
+                        <li>Direct founder access</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <h3>What industries does AVACompli serve?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>AVACompli specializes in highly regulated industries where compliance is mission-critical:</p>
+                    <ul>
+                        <li><strong>Pharmaceutical & Biotech:</strong> FDA, GMP, GLP, clinical trial compliance</li>
+                        <li><strong>Healthcare Systems:</strong> HIPAA, Joint Commission, CMS regulations</li>
+                        <li><strong>Financial Services & Banking:</strong> SEC, FINRA, Dodd-Frank, SOX compliance</li>
+                        <li><strong>Manufacturing:</strong> ISO certifications, OSHA, environmental compliance</li>
+                        <li><strong>Medical Devices:</strong> FDA 21 CFR Part 820, ISO 13485</li>
+                        <li><strong>Insurance:</strong> State regulations, NAIC standards</li>
+                        <li><strong>Aerospace & Defense:</strong> FAA, DOD, ITAR compliance</li>
+                        <li><strong>Government Contracting:</strong> FAR, DFARS requirements</li>
+                        <li><strong>Energy & Utilities:</strong> EPA, FERC, state utility regulations</li>
+                        <li><strong>Legal Services:</strong> Bar association requirements, client confidentiality</li>
+                        <li><strong>Technology/Software:</strong> SOC 2, ISO 27001, GDPR</li>
+                    </ul>
+                    <p>We serve Fortune 1000 compliance teams across all regulatory frameworks—from FDA and SEC to ISO, FAA, DOD, EPA, and beyond.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <h3>How long does implementation take?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>AVACompli's implementation follows a phased approach:</p>
+                    <p><strong>Phase 1: Discovery & Planning (Weeks 1-4)</strong></p>
+                    <ul>
+                        <li>Assessment of current compliance infrastructure</li>
+                        <li>Identification of all global locations requiring digitization</li>
+                        <li>Language requirements analysis</li>
+                        <li>Integration planning with existing systems</li>
+                    </ul>
+                    <p><strong>Phase 2: Mobile Digitization Deployment (Weeks 5-12)</strong></p>
+                    <ul>
+                        <li>On-site teams deployed to priority locations</li>
+                        <li>Scanning operations begin</li>
+                        <li>First archives become searchable within 8 weeks</li>
+                    </ul>
+                    <p><strong>Phase 3: Platform Activation (Weeks 6-10)</strong></p>
+                    <ul>
+                        <li>AI training on your documentation</li>
+                        <li>First custom training videos generated</li>
+                        <li>User access provisioned</li>
+                        <li>Integration with LMS and other systems completed</li>
+                    </ul>
+                    <p><strong>Phase 4: Full Operational (Week 12+)</strong></p>
+                    <ul>
+                        <li>Complete platform live across all locations</li>
+                        <li>Compliance architects embedded with teams</li>
+                        <li>Continuous monitoring active</li>
+                    </ul>
+                    <p><strong>Total timeline to full deployment: 3-4 months</strong></p>
+                    <p>Digitization of large archives continues in parallel and completes within 6-9 months for most organizations.</p>
+                </div>
+            </div>
+        </div>
+
+                <!-- FAQ 6 (continued) -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <h3>How does AVACompli integrate with our existing systems?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>AVACompli is designed for seamless enterprise integration:</p>
+                    <p><strong>Learning Management Systems (LMS):</strong></p>
+                    <ul>
+                        <li>Direct integration with Workday Learning, SAP SuccessFactors, Cornerstone OnDemand</li>
+                        <li>SCORM-compliant content packages</li>
+                        <li>xAPI (Tin Can) support for advanced tracking</li>
+                        <li>Single sign-on (SSO) via SAML 2.0</li>
+                    </ul>
+                    <p><strong>Enterprise Resource Planning (ERP):</strong></p>
+                    <ul>
+                        <li>SAP, Oracle, Microsoft Dynamics integration</li>
+                        <li>Automated employee data synchronization</li>
+                        <li>Training assignment based on role/location</li>
+                    </ul>
+                    <p><strong>HR Systems:</strong></p>
+                    <ul>
+                        <li>Workday HCM, ADP, UKG integration</li>
+                        <li>Automatic onboarding training triggers</li>
+                        <li>Certification tracking in employee records</li>
+                    </ul>
+                    <p><strong>Document Management:</strong></p>
+                    <ul>
+                        <li>SharePoint, Box, Documentum connectivity</li>
+                        <li>Bidirectional document sync</li>
+                        <li>Version control and audit trails</li>
+                    </ul>
+                    <p><strong>GRC Platforms:</strong></p>
+                    <ul>
+                        <li>ServiceNow GRC, MetricStream, RSA Archer integration</li>
+                        <li>Risk and control mapping</li>
+                        <li>Audit finding management</li>
+                    </ul>
+                    <p><strong>Custom APIs:</strong> RESTful APIs available for custom integrations with proprietary systems.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 7 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <h3>What languages does AVACompli support?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>AVACompli supports <strong>100+ languages</strong> for both training content and AI compliance intelligence:</p>
+                    <p><strong>Major Languages Supported:</strong></p>
+                    <ul>
+                        <li>All European languages (English, Spanish, French, German, Italian, Portuguese, Dutch, Polish, etc.)</li>
+                        <li>Asian languages (Mandarin, Cantonese, Japanese, Korean, Hindi, Bengali, Vietnamese, Thai, etc.)</li>
+                        <li>Middle Eastern languages (Arabic, Hebrew, Farsi, Turkish)</li>
+                        <li>Regional dialects (Latin American vs. European Spanish, Brazilian vs. European Portuguese, etc.)</li>
+                    </ul>
+                    <p><strong>Text-based queries:</strong> Unlimited in all 100+ languages (included)</p>
+                    <p><strong>Voice-based queries:</strong> Available in all languages as premium add-on ($2K per employee per year)</p>
+                    <p>All training videos, policy documents, and AI responses are automatically generated in your required languages with cultural adaptation, not just direct translation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 8 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <h3>How quickly can AVACompli generate new training content?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p><strong>90 seconds.</strong> That's the average time to generate a professionally produced, multilingual compliance training video from your policy documents.</p>
+                    <p><strong>The process:</strong></p>
+                    <ul>
+                        <li>Upload policy document or SOP</li>
+                        <li>AI analyzes content and identifies key learning objectives</li>
+                        <li>System generates script, visuals, and narration</li>
+                        <li>Professional video rendered in all required languages</li>
+                        <li>Content deployed to your LMS automatically</li>
+                    </ul>
+                    <p><strong>Updates are equally fast:</strong> When regulations change or policies are updated, new training videos are regenerated across all languages in minutes, not weeks or months.</p>
+                    <p>Compare this to traditional production: 6-9 months and $25K-$50K per hour of content.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 9 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <h3>What happens during the mobile digitization process?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>AVACompli deploys specialized teams to your facilities worldwide to digitize decades of paper compliance records:</p>
+                    <p><strong>Step 1: Site Assessment</strong></p>
+                    <ul>
+                        <li>Our team surveys your archive storage locations</li>
+                        <li>Estimates volume and categorizes document types</li>
+                        <li>Plans logistics for on-site scanning operations</li>
+                    </ul>
+                    <p><strong>Step 2: Secure Setup</strong></p>
+                    <ul>
+                        <li>Temporary scanning facilities established at your offices</li>
+                        <li>Enterprise-grade OCR scanners deployed</li>
+                        <li>Chain of custody procedures implemented</li>
+                        <li>Background-checked personnel assigned</li>
+                    </ul>
+                    <p><strong>Step 3: Digitization</strong></p>
+                    <ul>
+                        <li>Documents scanned at 300+ DPI for optimal OCR accuracy</li>
+                        <li>Automatic categorization and tagging</li>
+                        <li>Quality assurance checks on every batch</li>
+                        <li>Secure encrypted upload to cloud storage</li>
+                    </ul>
+                    <p><strong>Step 4: AI Indexing</strong></p>
+                    <ul>
+                        <li>Machine learning analyzes document content</li>
+                        <li>Automatic classification by type, date, relevance</li>
+                        <li>Full-text search capability in 100+ languages</li>
+                        <li>Metadata extraction and organization</li>
+                    </ul>
+                    <p><strong>Timeline:</strong> 40-year archives become fully searchable in approximately 8 weeks per location.</p>
+                    <p><strong>Security:</strong> All digitized documents maintain audit trails, access controls, and chain of custody documentation required for regulated industries.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 10 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <h3>How does the on-site audit support work?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>AVACompli provides <strong>on-site compliance architects at ALL your global offices during audits</strong>—something no software-only vendor can offer:</p>
+                    <p><strong>Pre-Audit Preparation:</strong></p>
+                    <ul>
+                        <li>Readiness assessment 30 days before audit</li>
+                        <li>Gap identification and remediation planning</li>
+                        <li>Mock audit walkthroughs with your team</li>
+                        <li>Document organization and indexing verification</li>
+                    </ul>
+                    <p><strong>During the Audit:</strong></p>
+                    <ul>
+                        <li>Compliance architect present in-person at your facility</li>
+                        <li>Silent partner who sits with auditors</li>
+                        <li>Retrieves any requested document in 30 seconds (not 3 hours)</li>
+                        <li>Answers procedural questions without interrupting your operations</li>
+                        <li>Real-time coordination across multiple audit sites</li>
+                    </ul>
+                    <p><strong>Post-Audit:</strong></p>
+                    <ul>
+                        <li>Debrief with your team on findings</li>
+                        <li>Remediation planning for any observations</li>
+                        <li>Documentation of lessons learned</li>
+                        <li>Updates to systems based on audit experience</li>
+                    </ul>
+                    <p><strong>Frequency:</strong> Included quarterly (4 audits per year across all locations)</p>
+                    <p><strong>Result:</strong> Typical 5-day audits are completed in 1.5 days due to instant document retrieval and expert support.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 11 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <h3>Why is the minimum engagement 1,000 employees?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>AVACompli is designed specifically for enterprise-scale operations where the complexity and cost of compliance justify our comprehensive platform:</p>
+                    <p><strong>Resource Requirements:</strong></p>
+                    <ul>
+                        <li>Mobile digitization teams deployed globally require minimum project size</li>
+                        <li>On-site compliance architects assigned to your organization full-time</li>
+                        <li>Named dedicated success team (not shared support pool)</li>
+                        <li>Custom AI training on your specific documentation library</li>
+                    </ul>
+                    <p><strong>ROI Threshold:</strong></p>
+                    <ul>
+                        <li>Organizations under 1,000 employees typically spend less than $20M on compliance</li>
+                        <li>Our platform delivers maximum value when replacing $50M+ in current costs</li>
+                        <li>The complexity that justifies our solution exists primarily at Fortune 1000 scale</li>
+                    </ul>
+                    <p><strong>Service Quality:</strong></p>
+                    <ul>
+                        <li>We accept only 10 new clients per year to maintain white-glove service levels</li>
+                        <li>Every client receives direct founder access and named compliance architects</li>
+                        <li>This level of personalization requires enterprise-scale engagements</li>
+                    </ul>
+                    <p>Smaller organizations are better served by point solutions for specific compliance needs rather than our complete ecosystem approach.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ 12 -->
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">
+                <h3>How do I get started with AVACompli?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>We accept 10 new enterprise clients per year through a selective application process:</p>
+                    <p><strong>Step 1: Submit Application</strong></p>
+                    <ul>
+                        <li>Complete the form on our website with your organization details</li>
+                        <li>Include information about employee count, compliance budget, and primary challenges</li>
+                        <li>Our team reviews applications within 48 hours</li>
+                    </ul>
+                    <p><strong>Step 2: Discovery Call (If Selected)</strong></p>
+                    <ul>
+                        <li>60-minute consultation with AVACompli compliance architects</li>
+                        <li>Deep dive into your current compliance infrastructure</li>
+                        <li>Assessment of fit for our platform</li>
+                        <li>ROI modeling specific to your organization</li>
+                    </ul>
+                    <p><strong>Step 3: Proposal & Contract</strong></p>
+                    <ul>
+                        <li>Custom proposal detailing implementation plan</li>
+                        <li>Statement of work with defined deliverables and timeline</li>
+                        <li>Contract terms (typically 3-year minimum commitment)</li>
+                    </ul>
+                    <p><strong>Step 4: Onboarding</strong></p>
+                    <ul>
+                        <li>Dedicated implementation team assigned</li>
+                        <li>Kickoff meeting with all stakeholders</li>
+                        <li>Begin 3-4 month deployment process</li>
+                    </ul>
+                    <p><strong>Timeline:</strong> From application to going live is typically 4-6 months.</p>
+                    <p><strong>Ready to apply?</strong> <a href="index.html#apply" style="color: var(--teal); text-decoration: none; font-weight: 600;">Connect with our team</a></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="faq-cta">
+                <h2>Still Have Questions?</h2>
+                <p>Our compliance experts are ready to discuss your specific requirements and how AVACompli can transform your compliance operations.</p>
+                <a href="index.html#apply" class="cta-primary">Connect With Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for FAQ Toggle -->
+    <script>
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Open clicked FAQ if it wasn't already open
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-ava">AVA</span><span class="logo-compli">Compli</span>
+                    </div>
+                    <p class="footer-tagline">Compliance. Training. Audits. Automated. Always Ready.</p>
+                    <p class="footer-black-card">The Black Card of Compliance™</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:hello@avacompli.com">hello@avacompli.com</a></p>
+                    <p>Address: 312 W 2nd Street #A8380<br>Casper, WY 82601</p>
+                    <p class="footer-note">For client inquiries only. We do not accept unsolicited proposals.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AVACompli. All rights reserved. | <a href="privacy.html" style="color: var(--teal); text-decoration: none;">Privacy Policy</a> | <a href="blog.html" style="color: var(--teal); text-decoration: none;">Blog</a> | <a href="faq.html" style="color: var(--teal); text-decoration: none;">FAQ</a></p>
+                <p class="footer-legal">AVACompli is a registered trademark. "The Black Card of Compliance" is a trademark of AVACompli.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+                        <li>xAPI (Tin Can) support
