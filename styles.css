@@ -15,6 +15,9 @@
     --teal: #00BCD4;
     --teal-light: #26C6DA;
     --teal-dark: #00ACC1;
+    --gold: #d4af37;
+    --gold-light: #f4d03f;
+    --gold-dark: #c19a2e;
 }
 
 body {
@@ -68,7 +71,7 @@ body {
     display: block;
     font-size: 10px;
     font-weight: 400;
-    color: var(--light-gray);
+    color: var(--gold);
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-top: 2px;
@@ -122,9 +125,9 @@ body {
 
 .hero-badge {
     display: inline-block;
-    background: rgba(0, 188, 212, 0.1);
-    border: 1px solid var(--teal);
-    color: var(--teal);
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid var(--gold);
+    color: var(--gold);
     padding: 8px 20px;
     border-radius: 50px;
     font-size: 12px;
@@ -180,7 +183,7 @@ body {
 .stat-number {
     font-size: 48px;
     font-weight: 900;
-    color: var(--teal);
+    color: var(--gold);
     line-height: 1;
     margin-bottom: 8px;
 }
@@ -372,7 +375,7 @@ body {
 
 .solution-value {
     font-size: 14px;
-    color: var(--teal);
+    color: var(--gold);
     font-weight: 600;
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -381,8 +384,8 @@ body {
 /* Guarantee Section */
 .section-guarantee {
     background: linear-gradient(135deg, var(--near-black) 0%, var(--dark-gray) 100%);
-    border-top: 1px solid rgba(0, 188, 212, 0.2);
-    border-bottom: 1px solid rgba(0, 188, 212, 0.2);
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .guarantee-box {
@@ -390,8 +393,8 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 60px;
-    background: rgba(0, 188, 212, 0.05);
-    border: 2px solid var(--teal);
+    background: rgba(212, 175, 55, 0.05);
+    border: 2px solid var(--gold);
     border-radius: 16px;
 }
 
@@ -399,7 +402,7 @@ body {
     font-size: 42px;
     font-weight: 900;
     margin-bottom: 25px;
-    color: var(--teal);
+    color: var(--gold);
 }
 
 .guarantee-text {
@@ -414,7 +417,7 @@ body {
 }
 
 .guarantee-record strong {
-    color: var(--teal);
+    color: var(--gold);
 }
 
 /* ROI Calculator */
@@ -472,8 +475,8 @@ body {
 }
 
 .calc-result.highlight {
-    background: rgba(0, 188, 212, 0.1);
-    border-color: var(--teal);
+    background: rgba(212, 175, 55, 0.1);
+    border-color: var(--gold);
 }
 
 .calc-label {
@@ -488,7 +491,7 @@ body {
 }
 
 .calc-result.highlight .calc-value {
-    color: var(--teal);
+    color: var(--gold);
 }
 
 .calculator-note {
@@ -656,7 +659,7 @@ body {
 
 .footer-black-card {
     font-size: 12px;
-    color: var(--teal);
+    color: var(--gold);
     font-weight: 600;
     margin-top: 8px;
     text-transform: uppercase;
