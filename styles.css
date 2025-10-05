@@ -12,9 +12,9 @@
     --medium-gray: #2a2a2a;
     --light-gray: #888888;
     --white: #ffffff;
-    --gold: #d4af37;
-    --gold-light: #f4d03f;
-    --gold-dark: #c19a2e;
+    --teal: #2C7A7B;
+    --teal-light: #3D9B9C;
+    --teal-dark: #1F5757;
 }
 
 body {
@@ -57,7 +57,7 @@ body {
 }
 
 .logo-ava {
-    color: var(--gold);
+    color: var(--teal);
 }
 
 .logo-compli {
@@ -75,8 +75,8 @@ body {
 }
 
 .nav-cta {
-    background: var(--gold);
-    color: var(--black);
+    background: var(--teal);
+    color: var(--white);
     padding: 12px 30px;
     border-radius: 6px;
     text-decoration: none;
@@ -86,9 +86,9 @@ body {
 }
 
 .nav-cta:hover {
-    background: var(--gold-light);
+    background: var(--teal-light);
     transform: translateY(-2px);
-    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 10px 30px rgba(44, 122, 123, 0.3);
 }
 
 /* Hero Section */
@@ -106,7 +106,7 @@ body {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(44, 122, 123, 0.05) 0%, transparent 70%);
     animation: pulse 8s ease-in-out infinite;
 }
 
@@ -122,9 +122,9 @@ body {
 
 .hero-badge {
     display: inline-block;
-    background: rgba(212, 175, 55, 0.1);
-    border: 1px solid var(--gold);
-    color: var(--gold);
+    background: rgba(44, 122, 123, 0.1);
+    border: 1px solid var(--teal);
+    color: var(--teal);
     padding: 8px 20px;
     border-radius: 50px;
     font-size: 12px;
@@ -145,7 +145,7 @@ body {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+    background: linear-gradient(135deg, var(--teal) 0%, var(--teal-light) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -180,7 +180,7 @@ body {
 .stat-number {
     font-size: 48px;
     font-weight: 900;
-    color: var(--gold);
+    color: var(--teal);
     line-height: 1;
     margin-bottom: 8px;
 }
@@ -194,8 +194,8 @@ body {
 
 .cta-primary {
     display: inline-block;
-    background: var(--gold);
-    color: var(--black);
+    background: var(--teal);
+    color: var(--white);
     padding: 20px 50px;
     border-radius: 8px;
     text-decoration: none;
@@ -208,9 +208,9 @@ body {
 }
 
 .cta-primary:hover {
-    background: var(--gold-light);
+    background: var(--teal-light);
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 15px 40px rgba(44, 122, 123, 0.4);
 }
 
 .hero-disclaimer {
@@ -289,7 +289,7 @@ body {
 
 .problem-card:hover {
     background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(212, 175, 55, 0.3);
+    border-color: rgba(44, 122, 123, 0.3);
     transform: translateY(-5px);
 }
 
@@ -301,7 +301,7 @@ body {
 .problem-card h3 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: var(--gold);
+    color: var(--teal);
 }
 
 .problem-card p {
@@ -321,13 +321,13 @@ body {
 
 .solution-item:hover {
     background: rgba(255, 255, 255, 0.05);
-    border-color: rgba(212, 175, 55, 0.3);
+    border-color: rgba(44, 122, 123, 0.3);
 }
 
 .solution-number {
     display: inline-block;
-    background: var(--gold);
-    color: var(--black);
+    background: var(--teal);
+    color: var(--white);
     font-size: 18px;
     font-weight: 900;
     padding: 8px 20px;
@@ -365,14 +365,14 @@ body {
     content: "✓";
     position: absolute;
     left: 0;
-    color: var(--gold);
+    color: var(--teal);
     font-weight: 900;
     font-size: 18px;
 }
 
 .solution-value {
     font-size: 14px;
-    color: var(--gold);
+    color: var(--teal);
     font-weight: 600;
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -381,8 +381,8 @@ body {
 /* Guarantee Section */
 .section-guarantee {
     background: linear-gradient(135deg, var(--near-black) 0%, var(--dark-gray) 100%);
-    border-top: 1px solid rgba(212, 175, 55, 0.2);
-    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    border-top: 1px solid rgba(44, 122, 123, 0.2);
+    border-bottom: 1px solid rgba(44, 122, 123, 0.2);
 }
 
 .guarantee-box {
@@ -390,8 +390,8 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 60px;
-    background: rgba(212, 175, 55, 0.05);
-    border: 2px solid var(--gold);
+    background: rgba(44, 122, 123, 0.05);
+    border: 2px solid var(--teal);
     border-radius: 16px;
 }
 
@@ -399,7 +399,7 @@ body {
     font-size: 42px;
     font-weight: 900;
     margin-bottom: 25px;
-    color: var(--gold);
+    color: var(--teal);
 }
 
 .guarantee-text {
@@ -414,7 +414,7 @@ body {
 }
 
 .guarantee-record strong {
-    color: var(--gold);
+    color: var(--teal);
 }
 
 /* ROI Calculator */
@@ -452,7 +452,7 @@ body {
 
 .calculator-input input:focus {
     outline: none;
-    border-color: var(--gold);
+    border-color: var(--teal);
 }
 
 .calculator-results {
@@ -472,8 +472,8 @@ body {
 }
 
 .calc-result.highlight {
-    background: rgba(212, 175, 55, 0.1);
-    border-color: var(--gold);
+    background: rgba(44, 122, 123, 0.1);
+    border-color: var(--teal);
 }
 
 .calc-label {
@@ -488,7 +488,7 @@ body {
 }
 
 .calc-result.highlight .calc-value {
-    color: var(--gold);
+    color: var(--teal);
 }
 
 .calculator-note {
@@ -518,7 +518,7 @@ body {
 
 .criteria-check {
     font-size: 32px;
-    color: var(--gold);
+    color: var(--teal);
     font-weight: 900;
     flex-shrink: 0;
 }
@@ -589,7 +589,7 @@ body {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--gold);
+    border-color: var(--teal);
     background: rgba(255, 255, 255, 0.08);
 }
 
@@ -656,7 +656,7 @@ body {
 
 .footer-black-card {
     font-size: 12px;
-    color: var(--gold);
+    color: var(--teal);
     font-weight: 600;
     margin-top: 8px;
     text-transform: uppercase;
@@ -677,13 +677,13 @@ body {
 }
 
 .footer-contact a {
-    color: var(--gold);
+    color: var(--teal);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-contact a:hover {
-    color: var(--gold-light);
+    color: var(--teal-light);
 }
 
 .footer-note {
@@ -868,22 +868,21 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--gold);
+    background: var(--teal);
     border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--gold-light);
+    background: var(--teal-light);
 }
 
 /* Selection */
 ::selection {
-    background: var(--gold);
-    color: var(--black);
+    background: var(--teal);
+    color: var(--white);
 }
 
 ::-moz-selection {
-    background: var(--gold);
-    color: var(--black);
+    background: var(--teal);
+    color: var(--white);
 }
-
