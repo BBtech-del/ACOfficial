@@ -17,7 +17,7 @@
                     <span class="logo-ava">AVA</span><span class="logo-compli">Compli</span>
                     <span class="logo-tagline">The Black Card of Compliance</span>
                 </div>
-                <a href="#apply" class="nav-cta">Apply for 2025</a>
+                <a href="#apply" class="nav-cta">Connect With Us</a>
             </div>
         </div>
     </nav>
@@ -50,7 +50,7 @@
                         <div class="stat-label">Failed Audits</div>
                     </div>
                 </div>
-                <a href="#apply" class="cta-primary">Apply for Client Selection</a>
+                <a href="#apply" class="cta-primary">Connect With Us</a>
                 <p class="hero-disclaimer">Minimum engagement: 1,000 employees | $15M annually</p>
             </div>
         </div>
@@ -59,7 +59,7 @@
     <!-- Trust Bar -->
     <section class="trust-bar">
         <div class="container">
-            <p class="trust-text">Trusted by compliance leaders at Fortune 1000 companies in Pharmaceuticals, Healthcare, Financial Services, and Manufacturing</p>
+            <p class="trust-text">Serving Fortune 1000 compliance teams across all highly regulated industries—from FDA and SEC to ISO, FAA, DOD, EPA, and beyond</p>
         </div>
     </section>
 
@@ -209,8 +209,9 @@
         <div class="container">
             <div class="guarantee-box">
                 <h2 class="guarantee-title">The AVACompli Guarantee</h2>
-                <p class="guarantee-text">If you fail an audit in your first 24 months with AVACompli, we refund 100% of your annual fees.</p>
-                <p class="guarantee-record">Our track record: <strong>Zero failed audits across all clients.</strong></p>
+                <p class="guarantee-text"><strong>100% Money-Back Promise:</strong> If you fail an audit in your first 12 months due to documentation gaps that AVACompli was contracted to manage, we refund 100% of your annual platform fees. Period.*</p>
+                <p class="guarantee-record">*Guarantee applies when AVACompli has full access to digitize and organize all relevant compliance documentation. Does not cover policy creation, implementation decisions, or documents withheld from our system.</p>
+                <p class="guarantee-record"><strong>Our track record: Zero failed audits. Ever.</strong></p>
             </div>
         </div>
     </section>
@@ -288,8 +289,8 @@
     <section class="section section-apply" id="apply">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Apply for Client Selection</h2>
-                <p class="section-subtitle">We're accepting 10 new clients for 2025. Applications are reviewed within 48 hours.</p>
+                <h2 class="section-title">Connect With Us</h2>
+                <p class="section-subtitle">Complete the form below and our team will respond within 48 hours.</p>
             </div>
             <form class="apply-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                 <div class="form-row">
@@ -307,7 +308,7 @@
                     <label for="email">Business Email *</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="title">Title *</label>
                     <input type="text" id="title" name="title" placeholder="e.g., Chief Compliance Officer" required>
@@ -329,7 +330,12 @@
                             <option value="manufacturing">Manufacturing</option>
                             <option value="medical-devices">Medical Devices</option>
                             <option value="insurance">Insurance</option>
-                            <option value="other">Other Regulated Industry</option>
+                            <option value="aerospace">Aerospace & Defense</option>
+                            <option value="government">Government Contracting</option>
+                            <option value="energy">Energy & Utilities</option>
+                            <option value="legal">Legal Services</option>
+                            <option value="technology">Technology/Software</option>
+                            <option value="other">Other Highly Regulated Industry</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -348,7 +354,7 @@
                     <label for="complianceBudget">Annual Compliance Budget *</label>
                     <select id="complianceBudget" name="complianceBudget" required>
                         <option value="">Select Range</option>
-                        <option value="under-30m">Under $30M (may not qualify)</option>
+                        <option value="under-30m">Under $30M</option>
                         <option value="30-50m">$30M - $50M</option>
                         <option value="50-100m">$50M - $100M</option>
                         <option value="100m+">$100M+</option>
@@ -360,8 +366,10 @@
                     <select id="urgency" name="urgency" required>
                         <option value="">Select Timeline</option>
                         <option value="immediate">Immediate (Next 90 days)</option>
-                        <option value="q1-2025">Q1 2025</option>
-                        <option value="q2-2025">Q2 2025</option>
+                        <option value="q1">Q1</option>
+                        <option value="q2">Q2</option>
+                        <option value="q3">Q3</option>
+                        <option value="q4">Q4</option>
                         <option value="exploring">Exploring Options</option>
                     </select>
                 </div>
@@ -378,12 +386,12 @@
                 
                 <div class="form-checkbox">
                     <input type="checkbox" id="qualified" name="qualified" required>
-                    <label for="qualified">I confirm that my organization meets the minimum requirements (1,000+ employees, $30M+ compliance budget) *</label>
+                    <label for="qualified">I'm authorized to discuss enterprise compliance solutions on behalf of my organization *</label>
                 </div>
                 
-                <button type="submit" class="cta-primary">Submit Application</button>
+                <button type="submit" class="cta-primary">Connect With Us</button>
                 
-                <p class="form-disclaimer">Applications are reviewed within 48 hours. If selected, you'll receive an invitation to schedule a discovery call.</p>
+                <p class="form-disclaimer">Our team will respond within 48 hours to schedule a discovery call.</p>
             </form>
         </div>
     </section>
@@ -391,9 +399,9 @@
 <!-- AVA Bot configuration -->
 <script>
 window.MyBotConfig = {
-  clientId: "helloatavacompli.com", // 
+  clientId: "helloatavacompli.com", 
   avatar: "https://i.postimg.cc/pTVP4hR4/AVaChattransp.png", 
-  botName: "AVA", //
+  botName: "AVA", 
   botImage: "https://i.postimg.cc/pTVP4hR4/AVaChattransp.png", 
   greeting: "Hello! I can help in 100+ languages", 
   api: "https://avacompli.oluwasanu.workers.dev", 
@@ -408,7 +416,8 @@ window.MyBotConfig = {
 };
 </script>
 <script src="https://widget.avacompli.com/widget.js" defer></script>
-    
+
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
