@@ -94,6 +94,30 @@ body {
     box-shadow: 0 10px 30px rgba(0, 188, 212, 0.3);
 }
 
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-social {
+    color: var(--light-gray);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-social:hover {
+    color: var(--teal);
+    transform: translateY(-2px);
+}
+
+.nav-social svg {
+    width: 20px;
+    height: 20px;
+}
+
 /* Hero Section - BLACK */
 .hero {
     padding: 180px 0 100px;
@@ -768,6 +792,30 @@ body {
     font-size: 12px;
     font-style: italic;
     margin-top: 15px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    color: var(--light-gray);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social a:hover {
+    color: var(--teal);
+    transform: translateY(-2px);
+}
+
+.footer-social svg {
+    width: 24px;
+    height: 24px;
 }
 
 .footer-bottom {
