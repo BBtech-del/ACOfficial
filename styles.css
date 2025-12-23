@@ -938,3 +938,43 @@ body {
     background: var(--teal);
     color: var(--white);
 }
+
+/* Container to keep buttons together */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Spacing between the two buttons */
+}
+
+/* The New White Button Style */
+.nav-ai-btn {
+    background: var(--white);
+    color: var(--teal);
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--white); /* Keeps size consistent */
+}
+
+.nav-ai-btn:hover {
+    background: var(--lighter-gray);
+    color: var(--teal-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+    .nav-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .nav-ai-btn, .nav-cta {
+        width: 100%;
+        text-align: center;
+    }
+}
