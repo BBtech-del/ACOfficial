@@ -200,11 +200,7 @@
         }
         
         .nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
+            position: relative;
         }
         
         .nav-content {
@@ -213,28 +209,14 @@
             align-items: center;
         }
         
-        .logo {
-            display: inline;
-        }
-        
         .logo-tagline {
-            display: inline;
-            margin-left: 8px;
-        }
-        
-        .hero {
-            padding-top: 80px;
+            display: none;
         }
     }
     
     @media (max-width: 480px) {
-        .hero {
-            padding-top: 80px;
-        }
-        
-        .logo-tagline {
-            font-size: 9px;
-            margin-left: 6px;
+        .logo-ava, .logo-compli {
+            font-size: 20px;
         }
     }
     </style>
