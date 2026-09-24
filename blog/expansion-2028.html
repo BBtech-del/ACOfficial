@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expansion 2028: Distributed Trust Infrastructure | AVACompli</title>
+    <meta name="description" content="AVACompli is extending its custody model into geographically redundant infrastructure for the credentials and records regulated organizations cannot afford to lose.">
+    <meta name="keywords" content="distributed trust infrastructure, institutional records, key escrow, geographic redundancy, records custody, AVACompli expansion">
+    <link rel="icon" href="https://i.postimg.cc/k4rLfHQQ/Screenshot-2025-09-16-174320.png" type="image/png">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+    .article-header {
+        padding: 180px 0 60px;
+        background: var(--near-black);
+        text-align: center;
+    }
+    .article-meta {
+        color: var(--teal);
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 22px;
+    }
+    .article-title {
+        font-size: 54px;
+        font-weight: 900;
+        color: var(--white);
+        line-height: 1.15;
+        margin-bottom: 28px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        letter-spacing: -1.5px;
+    }
+    .article-excerpt {
+        font-size: 19px;
+        color: var(--light-gray);
+        line-height: 1.6;
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .article-hero-image {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        height: 440px;
+        background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1600&q=80');
+        background-size: cover;
+        background-position: center;
+        border-radius: 14px;
+        margin-top: 60px;
+        margin-bottom: 0;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    .article-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 80px 20px;
+        background: var(--white);
+    }
+    .article-content h2 {
+        font-size: 34px;
+        font-weight: 800;
+        color: var(--teal);
+        margin-top: 60px;
+        margin-bottom: 22px;
+        letter-spacing: -0.8px;
+        line-height: 1.2;
+    }
+    .article-content h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-top: 40px;
+        margin-bottom: 18px;
+        letter-spacing: -0.3px;
+    }
+    .article-content p {
+        font-size: 17px;
+        color: var(--text-dark);
+        line-height: 1.8;
+        margin-bottom: 24px;
+    }
+    .article-content ul, .article-content ol {
+        color: var(--text-dark);
+        font-size: 17px;
+        line-height: 1.8;
+        margin-bottom: 24px;
+        padding-left: 26px;
+    }
+    .article-content li { margin-bottom: 12px; }
+    .article-content strong { color: var(--text-dark); font-weight: 700; }
+    .highlight-box {
+        background: rgba(0, 188, 212, 0.05);
+        border-left: 4px solid var(--teal);
+        padding: 30px 34px;
+        margin: 40px 0;
+        border-radius: 8px;
+    }
+    .highlight-box p { margin-bottom: 0; }
+    .cta-box {
+        background: linear-gradient(135deg, var(--near-black) 0%, var(--dark-gray) 100%);
+        border: 2px solid var(--teal);
+        padding: 50px 40px;
+        border-radius: 16px;
+        text-align: center;
+        margin: 60px 0;
+    }
+    .cta-box h3 {
+        color: var(--teal);
+        margin-top: 0;
+        font-size: 24px;
+    }
+    .cta-box p {
+        color: var(--light-gray);
+        margin-bottom: 24px;
+    }
+    @media (max-width: 768px) {
+        .article-title { font-size: 34px; letter-spacing: -0.8px; }
+        .article-excerpt { font-size: 16px; }
+        .article-hero-image { height: 240px; margin-top: 40px; border-radius: 10px; }
+        .article-content h2 { font-size: 26px; }
+        .article-content h3 { font-size: 19px; }
+        .article-content p, .article-content li { font-size: 16px; }
+    }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="../index.html">
+                        <span class="logo-ava">AVA</span><span class="logo-compli">Compli</span>
+                    </a>
+                    <span class="logo-tagline">Institutional Records. Defense. Trust.</span>
+                </div>
+                <div class="nav-links">
+                    <a href="https://ai.avacompli.com" class="nav-link">AI Compliance Solutions</a>
+                    <a href="../index.html#apply" class="nav-cta">Connect With Us</a>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="https://ai.avacompli.com">AI Compliance Solutions</a>
+        <a href="../index.html#apply" class="mobile-cta" onclick="closeMobileMenu()">Connect With Us</a>
+    </div>
+
+    <header class="article-header">
+        <div class="container">
+            <div class="article-meta">Announcement &nbsp;&bull;&nbsp; 8 min read</div>
+            <h1 class="article-title">Expansion 2028: Distributed Trust Infrastructure</h1>
+            <p class="article-excerpt">Why we are extending our custody model into geographically redundant infrastructure for the records and credentials regulated organizations cannot afford to lose.</p>
+            <div class="article-hero-image"></div>
+        </div>
+    </header>
+
+    <article class="article-content">
+
+        <p>For seven years, AVACompli has done one thing: we take custody of the records that keep regulated organizations running, and we make sure they are never lost, never misfiled, and never the reason an audit fails.</p>
+
+        <p>That work has taken us into the back offices of Fortune 1000 companies, into federal agencies, and into the rooms where regulators sit across the table from compliance teams. We have digitized forty years of paper in eight weeks. We have retrieved documents in thirty seconds when the auditor asked. We have turned five day audits into one and a half day audits.</p>
+
+        <p>Now we are building the next layer.</p>
+
+        <h2>The Problem We Are Solving Next</h2>
+
+        <p>Every regulated organization in the world depends on things it cannot afford to lose. Not just documents. Credentials. Cryptographic keys. Signing certificates. Access tokens. The material that proves who you are, what you signed, and what you sent. The material that, if it disappears, takes your operations, your compliance posture, and your reputation with it.</p>
+
+        <p>Today, most organizations store this material in one of two ways. Either in a single hardened facility that is one power outage, one flood, or one bad actor away from catastrophic loss. Or spread across multiple locations without a coherent reconstruction model, which means a partial failure can leave the material unrecoverable even if the hardware survives.</p>
+
+        <p>Both approaches fail the same way: they assume that nothing goes wrong.</p>
+
+        <h2>What We Are Building</h2>
+
+        <p>Beginning in 2028, AVACompli will operate a geographically distributed custody platform for the credentials and records our clients cannot afford to lose. The architecture is straightforward in principle and demanding in execution:</p>
+
+        <ul>
+            <li>Client material is split into shares using threshold cryptography, the same mathematical foundation used by defense and financial institutions for decades.</li>
+            <li>Each share is stored in a separate, hardened, geographically independent facility under AVACompli custody.</li>
+            <li>Reconstruction requires a defined threshold of shares. No single site, and no single compromise, can ever expose the underlying material.</li>
+            <li>If one facility is taken offline by disaster, sabotage, or failure, the material remains fully accessible from the remaining sites.</li>
+            <li>If one facility is physically destroyed, the material is reconstructed from the others without loss.</li>
+        </ul>
+
+        <p>The model is simple. The material survives the loss of any single site. It cannot be reconstructed by anyone who compromises only one site. And it does not depend on any single piece of hardware, any single vendor, or any single jurisdiction.</p>
+
+        <div class="highlight-box">
+            <p><strong>In plain terms:</strong> the records and credentials our clients place with us in 2028 will survive a site being vaporized. Not because we are lucky. Because we designed it that way from the first line of code.</p>
+        </div>
+
+        <h2>Why This Is the Natural Extension of What We Already Do</h2>
+
+        <p>We are not pivoting. This is the same work we have done since day one, applied to a new class of material.</p>
+
+        <p>When we digitize forty years of paper archives, we are taking custody of physical records and giving the client something better: an indexed, searchable, defensible digital twin that cannot be lost to fire, flood, or neglect.</p>
+
+        <p>When we sit with an auditor and retrieve a document in thirty seconds, we are proving that custody works. That the record is where it should be, that it is what it claims to be, and that it can be produced on demand.</p>
+
+        <p>What changes in 2028 is the class of material we hold. Instead of paper and scans, we hold cryptographic shares. Instead of one vault, we operate three. Instead of protecting against misfiling, we protect against the total loss of everything a client depends on to prove who they are.</p>
+
+        <h2>The Timeline</h2>
+
+        <p>Construction of the first three facilities is already underway. We are not announcing intentions. We are announcing work that has begun.</p>
+
+        <ul>
+            <li><strong>2026:</strong> Site selection and infrastructure build. First facility operational in a hardened, geographically isolated location.</li>
+            <li><strong>2027:</strong> Second and third facilities online. Internal threshold reconstruction tested against live failure scenarios.</li>
+            <li><strong>2028:</strong> Client onboarding opens. Initial capacity reserved for existing AVACompli clients in healthcare, finance, and defense.</li>
+        </ul>
+
+        <p>We are not rushing this. Distributed trust infrastructure is not a feature. It is a commitment. When we open the doors in 2028, the platform will have been tested against the failure modes it was built to survive.</p>
+
+        <h2>What This Means for Our Clients Today</h2>
+
+        <p>Nothing changes about the work we do for you now. Digitization, custody, multilingual training, on-site architects. All of it continues.</p>
+
+        <p>What changes is what comes next. If you are already an AVACompli client, you will be first in line when the platform opens in 2028. If you are considering us now, know that you are not just engaging a records firm. You are engaging the firm that is building the next layer of institutional trust.</p>
+
+        <p>If you would like to discuss what distributed custody could look like for your organization, or if you want early access when the platform opens, use the contact form on our site.</p>
+
+        <div class="cta-box">
+            <h3>Ready to talk?</h3>
+            <p>Our team responds within 48 hours. Early conversations welcome.</p>
+            <a href="../index.html#apply" class="cta-primary">Connect With Us</a>
+        </div>
+
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-ava">AVA</span><span class="logo-compli">Compli</span>
+                    </div>
+                    <p class="footer-tagline">Compliance. Defense. Security. Automated. Always Ready.</p>
+                    <p class="footer-black-card">The Black Card of Compliance&trade;</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Email: <a href="mailto:hello@avacompli.com">hello@avacompli.com</a></p>
+                    <p>Address: 2125 Biscayne Blvd, Ste 204<br>Miami, FL 33137</p>
+                    <p class="footer-note">For client inquiries only. We do not accept unsolicited proposals.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AVACompli. All rights reserved. | <a href="../privacy.html">Privacy Policy</a> | <a href="../blog.html">Insights</a> | <a href="../faq.html">FAQ</a></p>
+                <p class="footer-legal">AVACompli is a registered trademark. "The Black Card of Compliance" is a trademark of AVACompli.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
