@@ -1,91 +1,108 @@
-// ROI Calculator
-document.addEventListener('DOMContentLoaded', function() {
-    const employeeInput = document.getElementById('employees');
-    const avacompliCostEl = document.getElementById('avacompli-cost');
-    const currentCostEl = document.getElementById('current-cost');
-    const savingsEl = document.getElementById('savings');
+// ============================================
+// Mobile Menu
+// ============================================
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
 
-    function calculateROI() {
-        const employees = parseInt(employeeInput.value) || 1000;
-        
-        // AVACompli cost: $15,000 per employee
-        const avacompliCost = employees * 15000;
-        
-        // Industry average: $20,000 per employee
-        const currentCost = employees * 20000;
-        
-        // Savings
-        const savings = currentCost - avacompliCost;
-        
-        // Update display
-        avacompliCostEl.textContent = formatCurrency(avacompliCost);
-        currentCostEl.textContent = formatCurrency(currentCost);
-        savingsEl.textContent = formatCurrency(savings);
-    }
+if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', function () {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+    });
+}
 
-    function formatCurrency(amount) {
-        return '$' + amount.toLocaleString('en-US');
-    }
+function closeMobileMenu() {
+    if (hamburger) hamburger.classList.remove('active');
+    if (mobileMenu) mobileMenu.classList.remove('active');
+    document.body.style.overflow = '';
+}
 
-    // Update calculator on input
-    if (employeeInput) {
-        employeeInput.addEventListener('input', calculateROI);
-        
-        // Initial calculation
-        calculateROI();
-    }
+if (mobileMenu) {
+    mobileMenu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMobileMenu);
+    });
+}
 
-    // Smooth scroll for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+// ============================================
+// Contact Form (Formspree)
+// ============================================
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const form = this;
+        const formData = new FormData(form);
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.textContent;
+
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
+
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        })
+        .then(function (response) {
+            if (response.ok) {
+                form.innerHTML = '<div style="text-align: center; padding: 60px 20px; background: #f0f9f4; border-radius: 12px;"><h3 style="color: #059669; font-size: 26px; margin-bottom: 16px;">Thank You</h3><p style="font-size: 17px; color: #1a1a1a; margin-bottom: 12px;">Your inquiry has been received.</p><p style="font-size: 15px; color: #666;">Our team will respond within 48 hours to schedule a discovery call.</p></div>';
+            } else {
+                throw new Error('Submission failed');
             }
+        })
+        .catch(function () {
+            alert('There was a problem submitting your form. Please email us directly at hello@avacompli.com');
+            submitButton.textContent = originalButtonText;
+            submitButton.disabled = false;
         });
     });
+}
 
-    // Form validation enhancement
-    const form = document.querySelector('.apply-form');
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            const complianceBudget = document.getElementById('complianceBudget').value;
-            
-            // Warn if budget is under $30M
-            if (complianceBudget === 'under-30m') {
-                const proceed = confirm('Your selected budget is below our typical minimum. We may not be able to accommodate your organization at this time. Would you still like to submit your application?');
-                
-                if (!proceed) {
-                    e.preventDefault();
-                }
-            }
-        });
+// ============================================
+// Insights Carousel
+// ============================================
+const track = document.querySelector('.insights-track');
+const slides = document.querySelectorAll('.insight-slide');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+if (track && slides.length && prevBtn && nextBtn) {
+    let currentIndex = 0;
+
+    function getSlidesToShow() {
+        const w = window.innerWidth;
+        if (w < 768) return 1;
+        if (w < 1024) return 2;
+        return 3;
     }
 
-    // Animate elements on scroll
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
+    function getMaxIndex() {
+        return Math.max(slides.length - getSlidesToShow(), 0);
+    }
 
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
+    function updateCarousel() {
+        const slideWidth = slides[0].offsetWidth + 24;
+        track.style.transform = 'translateX(-' + (currentIndex * slideWidth) + 'px)';
+    }
 
-    // Observe all solution items and problem cards
-    document.querySelectorAll('.solution-item, .problem-card, .criteria-card').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(el);
+    prevBtn.addEventListener('click', function () {
+        currentIndex = Math.max(currentIndex - 1, 0);
+        updateCarousel();
     });
-});
+
+    nextBtn.addEventListener('click', function () {
+        currentIndex = Math.min(currentIndex + 1, getMaxIndex());
+        updateCarousel();
+    });
+
+    let resizeTimer;
+    window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () {
+            currentIndex = Math.min(currentIndex, getMaxIndex());
+            updateCarousel();
+        }, 150);
+    });
+}
