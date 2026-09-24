@@ -3,199 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compliance Insights & Resources - AVACompli Blog</title>
-    <meta name="description" content="Expert insights on SOC 2, HIPAA, FDA, SEC compliance, audit preparation, and compliance training for Fortune 1000 companies.">
-    <meta name="keywords" content="compliance blog, SOC 2 compliance, HIPAA training, FDA audits, SEC compliance, compliance training videos, GRC platforms">
-    
-    <link rel="icon" href="https://i.postimg.cc/k4rLfHQQ/Screenshot_2025-09-16_174320.png" type="image/png">
-    <link rel="shortcut icon" href="https://i.postimg.cc/k4rLfHQQ/Screenshot_2025-09-16_174320.png" type="image/png">
-
+    <title>Insights | AVACompli</title>
+    <meta name="description" content="Guidance on records management, audit readiness, digitization, and compliance for highly regulated organizations.">
+    <link rel="icon" href="https://i.postimg.cc/k4rLfHQQ/Screenshot-2025-09-16-174320.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
-        /* --- Navigation Styles (Matches your image) --- */
-        .nav {
-            background-color: #000000; /* Pure Black Header */
-            padding: 20px 0;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .nav-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo a {
-            text-decoration: none;
-        }
-
-        .logo-ava {
-            color: #00BCD4; /* Teal */
-            font-weight: 900;
-            font-size: 28px;
-        }
-
-        .logo-compli {
-            color: #FFFFFF; /* White */
-            font-weight: 900;
-            font-size: 28px;
-        }
-
-        .logo-tagline {
-            display: block;
-            font-size: 10px;
-            color: #666;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-top: 4px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
-
-        /* Button 1: Connect With Us (Teal BG, White Text) */
-        .btn-connect {
-            background-color: #00BCD4;
-            color: #ffffff;
-            padding: 10px 24px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 14px;
-            transition: opacity 0.3s ease;
-        }
-        .btn-connect:hover {
-            opacity: 0.9;
-        }
-
-        /* Button 2: AVACompli AI (White BG, Teal Text) */
-        .btn-ai {
-            background-color: #ffffff;
-            color: #00BCD4;
-            padding: 10px 24px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 14px;
-            transition: background 0.3s ease;
-        }
-        .btn-ai:hover {
-            background-color: #f0f0f0;
-        }
-
-        /* --- Rest of Blog Styles --- */
-        .blog-hero {
-            padding: 180px 0 80px;
+        .insights-hero {
+            padding: 180px 0 70px;
             text-align: center;
-            background: var(--near-black, #111);
+            background: var(--black);
         }
-        
-        .blog-hero h1 {
+        .insights-hero h1 {
             font-size: 56px;
             font-weight: 900;
-            margin-bottom: 20px;
-            color: #ffffff;
+            color: var(--white);
+            letter-spacing: -1.8px;
+            margin-bottom: 18px;
         }
-        
-        .blog-hero p {
-            font-size: 20px;
-            color: #cccccc;
-            max-width: 700px;
+        .insights-hero p {
+            font-size: 18px;
+            color: var(--light-gray);
+            max-width: 640px;
             margin: 0 auto;
+            line-height: 1.6;
         }
-        
-        .section {
-            background: #ffffff;
-        }
-        
-        .blog-grid {
+        .insights-list-section { background: var(--white); padding: 80px 0 110px; }
+        .insights-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-            padding: 80px 0;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 32px;
         }
-        
-        .blog-card {
-            background: #ffffff;
-            border: 1px solid rgba(0, 0, 0, 0.1);
+        .insight-card {
+            background: var(--white);
+            border: 1px solid rgba(0, 0, 0, 0.08);
             border-radius: 12px;
             overflow: hidden;
             transition: all 0.3s ease;
-            cursor: pointer;
+            text-decoration: none;
+            display: block;
         }
-        
-        .blog-card:hover {
-            background: #f9f9f9;
-            border-color: #00BCD4;
-            transform: translateY(-5px);
+        .insight-card:hover {
+            border-color: var(--teal);
+            transform: translateY(-4px);
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.07);
         }
-        
-        .blog-card-content {
-            padding: 40px;
-        }
-        
-        .blog-date {
-            font-size: 14px;
-            color: #00BCD4;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
-        }
-        
-        .blog-card h2 {
-            font-size: 24px;
+        .insight-card-body { padding: 36px 34px; }
+        .insight-card-date {
+            font-size: 12px;
+            color: var(--teal);
             font-weight: 700;
-            color: #333;
-            margin-bottom: 15px;
-            line-height: 1.3;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 14px;
         }
-        
-        .blog-excerpt {
-            font-size: 16px;
-            color: #666;
+        .insight-card h2 {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 14px;
+            line-height: 1.3;
+            letter-spacing: -0.4px;
+        }
+        .insight-card p {
+            font-size: 15px;
+            color: var(--text-muted);
             line-height: 1.7;
             margin-bottom: 20px;
         }
-        
-        .blog-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        
-        .blog-tag {
+        .insight-card-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+        .insight-card-tag {
             background: rgba(0, 188, 212, 0.1);
-            color: #00BCD4;
+            color: var(--teal);
             padding: 5px 12px;
             border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
         }
-        
-        .blog-read-more {
-            display: inline-block;
-            color: #00BCD4;
-            font-weight: 600;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .blog-read-more:hover {
-            color: #008ba3;
-        }
-        
-        .blog-read-more::after {
-            content: " →";
+        @media (max-width: 768px) {
+            .insights-hero h1 { font-size: 38px; }
+            .insights-hero p { font-size: 16px; }
+            .insights-list { grid-template-columns: 1fr; gap: 24px; }
         }
     </style>
 </head>
 <body>
+
     <nav class="nav">
         <div class="container">
             <div class="nav-content">
@@ -203,202 +98,177 @@
                     <a href="index.html">
                         <span class="logo-ava">AVA</span><span class="logo-compli">Compli</span>
                     </a>
-                    <span class="logo-tagline">The Black Card of Compliance</span>
+                    <span class="logo-tagline">Institutional Records. Defense. Trust.</span>
                 </div>
-                
                 <div class="nav-links">
-                    <a href="index.html#apply" class="btn-connect">Connect With Us</a>
-                    <a href="https://ai.avacompli.com" class="btn-ai">AVACompli AI</a>
+                    <a href="https://ai.avacompli.com" class="nav-link">AI Compliance Solutions</a>
+                    <a href="index.html#apply" class="nav-cta">Connect With Us</a>
                 </div>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
     </nav>
 
-    <section class="blog-hero">
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="https://ai.avacompli.com">AI Compliance Solutions</a>
+        <a href="index.html#apply" class="mobile-cta" onclick="closeMobileMenu()">Connect With Us</a>
+    </div>
+
+    <section class="insights-hero">
         <div class="container">
-            <h1>Compliance Insights</h1>
-            <p>Expert guidance on navigating complex regulatory requirements for Fortune 1000 companies</p>
+            <h1>Insights</h1>
+            <p>Guidance for the people responsible for keeping the record straight.</p>
         </div>
     </section>
 
-    <section class="section">
+    <section class="insights-list-section">
         <div class="container">
-            <div class="blog-grid">
-                
-                <a href="blog/multilingual-compliance-training.html" style="text-decoration: none;">
-                    <article class="blog-card">
-                        <div class="blog-card-content">
-                            <div class="blog-date">September 18, 2025</div>
-                            <h2>Multilingual Compliance Training: Best Practices for Global Organizations</h2>
-                            <p class="blog-excerpt">How Fortune 1000 companies are ensuring compliance training reaches every employee, in every language, across every location.</p>
-                            <div class="blog-tags">
-                                <span class="blog-tag">Training</span>
-                                <span class="blog-tag">Global Compliance</span>
-                                <span class="blog-tag">Multilingual</span>
-                            </div>
-                            <span class="blog-read-more">Read Article</span>
+            <div class="insights-list">
+
+                <a href="blog/expansion-2028.html" class="insight-card">
+                    <div class="insight-card-body">
+                        <div class="insight-card-date">Announcement</div>
+                        <h2>Expansion 2028: Distributed Trust Infrastructure</h2>
+                        <p>Why we are extending our custody model into geographically redundant infrastructure for the credentials regulated organizations cannot afford to lose.</p>
+                        <div class="insight-card-tags">
+                            <span class="insight-card-tag">Expansion</span>
+                            <span class="insight-card-tag">Infrastructure</span>
                         </div>
-                    </article>
+                    </div>
                 </a>
 
-                <a href="blog/soc-2-compliance-guide.html" style="text-decoration: none;">
-                    <article class="blog-card">
-                        <div class="blog-card-content">
-                            <div class="blog-date">August 12, 2025</div>
-                            <h2>The Complete SOC 2 Compliance Guide for 2025</h2>
-                            <p class="blog-excerpt">Everything enterprise organizations need to know about achieving and maintaining SOC 2 Type II certification in the modern regulatory landscape.</p>
-                            <div class="blog-tags">
-                                <span class="blog-tag">SOC 2</span>
-                                <span class="blog-tag">Certification</span>
-                                <span class="blog-tag">Security</span>
-                            </div>
-                            <span class="blog-read-more">Read Article</span>
+                <a href="blog/multilingual-compliance-training.html" class="insight-card">
+                    <div class="insight-card-body">
+                        <div class="insight-card-date">September 18, 2025</div>
+                        <h2>Multilingual Compliance Training: Best Practices for Global Organizations</h2>
+                        <p>How Fortune 1000 companies ensure training reaches every employee, in every language, across every location.</p>
+                        <div class="insight-card-tags">
+                            <span class="insight-card-tag">Training</span>
+                            <span class="insight-card-tag">Global</span>
                         </div>
-                    </article>
+                    </div>
                 </a>
 
-                <a href="blog/compliance-training-videos.html" style="text-decoration: none;">
-                    <article class="blog-card">
-                        <div class="blog-card-content">
-                            <div class="blog-date">June 5, 2025</div>
-                            <h2>AI-Powered Compliance Training Videos: The Future of Employee Education</h2>
-                            <p class="blog-excerpt">How artificial intelligence is revolutionizing compliance training content creation, reducing costs by 90% while improving engagement.</p>
-                            <div class="blog-tags">
-                                <span class="blog-tag">AI</span>
-                                <span class="blog-tag">Training Videos</span>
-                                <span class="blog-tag">Innovation</span>
-                            </div>
-                            <span class="blog-read-more">Read Article</span>
+                <a href="blog/soc-2-compliance-guide.html" class="insight-card">
+                    <div class="insight-card-body">
+                        <div class="insight-card-date">August 12, 2025</div>
+                        <h2>The Complete SOC 2 Compliance Guide for 2025</h2>
+                        <p>Everything enterprise organizations need to know about achieving and maintaining SOC 2 Type II certification.</p>
+                        <div class="insight-card-tags">
+                            <span class="insight-card-tag">SOC 2</span>
+                            <span class="insight-card-tag">Certification</span>
                         </div>
-                    </article>
+                    </div>
                 </a>
 
-                <a href="blog/hipaa-compliance-training.html" style="text-decoration: none;">
-                    <article class="blog-card">
-                        <div class="blog-card-content">
-                            <div class="blog-date">March 22, 2025</div>
-                            <h2>HIPAA Compliance Training Requirements: A 2025 Update</h2>
-                            <p class="blog-excerpt">New HIPAA training mandates for healthcare organizations and how to ensure your workforce meets federal requirements.</p>
-                            <div class="blog-tags">
-                                <span class="blog-tag">HIPAA</span>
-                                <span class="blog-tag">Healthcare</span>
-                                <span class="blog-tag">Training</span>
-                            </div>
-                            <span class="blog-read-more">Read Article</span>
+                <a href="blog/compliance-training-videos.html" class="insight-card">
+                    <div class="insight-card-body">
+                        <div class="insight-card-date">June 5, 2025</div>
+                        <h2>Compliance Training Videos: The Future of Employee Education</h2>
+                        <p>How modern content generation is reducing training creation costs while improving employee engagement.</p>
+                        <div class="insight-card-tags">
+                            <span class="insight-card-tag">Training</span>
+                            <span class="insight-card-tag">Innovation</span>
                         </div>
-                    </article>
-                </a>
-                
-                <a href="blog/fda-audit-preparation.html" style="text-decoration: none;">
-                    <article class="blog-card">
-                        <div class="blog-card-content">
-                            <div class="blog-date">March 20, 2025</div>
-                            <h2>FDA Audit Preparation: The 90-Day Readiness Blueprint</h2>
-                            <p class="blog-excerpt">How pharmaceutical and medical device companies can prepare for FDA inspections with systematic documentation management.</p>
-                            <div class="blog-tags">
-                                <span class="blog-tag">FDA</span>
-                                <span class="blog-tag">Audit</span>
-                                <span class="blog-tag">Pharma</span>
-                            </div>
-                            <span class="blog-read-more">Read Article</span>
-                        </div>
-                    </article>
+                    </div>
                 </a>
 
-                <a href="blog/document-digitization-compliance.html" style="text-decoration: none;">
-                    <article class="blog-card">
-                        <div class="blog-card-content">
-                            <div class="blog-date">January 10, 2025</div>
-                            <h2>Document Digitization for Compliance: Converting 40 Years of Archives in Weeks</h2>
-                            <p class="blog-excerpt">The enterprise approach to digitizing decades of paper compliance documentation with full audit trail preservation.</p>
-                            <div class="blog-tags">
-                                <span class="blog-tag">Digitization</span>
-                                <span class="blog-tag">Archives</span>
-                                <span class="blog-tag">Technology</span>
-                            </div>
-                            <span class="blog-read-more">Read Article</span>
+                <a href="blog/hipaa-compliance-training.html" class="insight-card">
+                    <div class="insight-card-body">
+                        <div class="insight-card-date">March 22, 2025</div>
+                        <h2>HIPAA Compliance Training Requirements: A 2025 Update</h2>
+                        <p>New HIPAA training mandates for healthcare organizations and how to ensure your workforce meets federal requirements.</p>
+                        <div class="insight-card-tags">
+                            <span class="insight-card-tag">HIPAA</span>
+                            <span class="insight-card-tag">Healthcare</span>
                         </div>
-                    </article>
+                    </div>
                 </a>
 
-                <a href="blog/grc-platform-comparison.html" style="text-decoration: none;">
-                    <article class="blog-card">
-                        <div class="blog-card-content">
-                            <div class="blog-date">August 15, 2024</div>
-                            <h2>GRC Platform Comparison 2024: What Fortune 1000 Companies Really Need</h2>
-                            <p class="blog-excerpt">An executive's guide to evaluating governance, risk, and compliance platforms for enterprise-scale operations.</p>
-                            <div class="blog-tags">
-                                <span class="blog-tag">GRC</span>
-                                <span class="blog-tag">Software</span>
-                                <span class="blog-tag">Comparison</span>
-                            </div>
-                            <span class="blog-read-more">Read Article</span>
+                <a href="blog/fda-audit-preparation.html" class="insight-card">
+                    <div class="insight-card-body">
+                        <div class="insight-card-date">March 20, 2025</div>
+                        <h2>FDA Audit Preparation: The 90-Day Readiness Blueprint</h2>
+                        <p>How pharmaceutical and medical device companies prepare for FDA inspections with systematic documentation management.</p>
+                        <div class="insight-card-tags">
+                            <span class="insight-card-tag">FDA</span>
+                            <span class="insight-card-tag">Audit</span>
                         </div>
-                    </article>
+                    </div>
                 </a>
 
-                <a href="blog/sec-compliance-documentation.html" style="text-decoration: none;">
-                    <article class="blog-card">
-                        <div class="blog-card-content">
-                            <div class="blog-date">May 3, 2024</div>
-                            <h2>SEC Compliance Documentation: Complete Requirements Breakdown</h2>
-                            <p class="blog-excerpt">Understanding the Securities and Exchange Commission's documentation requirements for financial services firms.</p>
-                            <div class="blog-tags">
-                                <span class="blog-tag">SEC</span>
-                                <span class="blog-tag">Financial Services</span>
-                                <span class="blog-tag">Documentation</span>
-                            </div>
-                            <span class="blog-read-more">Read Article</span>
+                <a href="blog/document-digitization-compliance.html" class="insight-card">
+                    <div class="insight-card-body">
+                        <div class="insight-card-date">January 10, 2025</div>
+                        <h2>Document Digitization for Compliance: Converting 40 Years of Archives in Weeks</h2>
+                        <p>The enterprise approach to digitizing decades of paper compliance documentation with full audit trail preservation.</p>
+                        <div class="insight-card-tags">
+                            <span class="insight-card-tag">Digitization</span>
+                            <span class="insight-card-tag">Archives</span>
                         </div>
-                    </article>
+                    </div>
                 </a>
 
-                <a href="blog/finra-compliance-checklist.html" style="text-decoration: none;">
-                    <article class="blog-card">
-                        <div class="blog-card-content">
-                            <div class="blog-date">February 19, 2024</div>
-                            <h2>FINRA Compliance Checklist: Annual Requirements for Broker-Dealers</h2>
-                            <p class="blog-excerpt">The essential compliance checklist every broker-dealer needs to pass FINRA examinations without issues.</p>
-                            <div class="blog-tags">
-                                <span class="blog-tag">FINRA</span>
-                                <span class="blog-tag">Broker-Dealers</span>
-                                <span class="blog-tag">Checklist</span>
-                            </div>
-                            <span class="blog-read-more">Read Article</span>
+                <a href="blog/grc-platform-comparison.html" class="insight-card">
+                    <div class="insight-card-body">
+                        <div class="insight-card-date">August 15, 2024</div>
+                        <h2>GRC Platform Comparison: What Fortune 1000 Companies Really Need</h2>
+                        <p>An executive guide to evaluating governance, risk, and compliance platforms at enterprise scale.</p>
+                        <div class="insight-card-tags">
+                            <span class="insight-card-tag">GRC</span>
+                            <span class="insight-card-tag">Comparison</span>
                         </div>
-                    </article>
+                    </div>
                 </a>
 
-                <a href="blog/audit-management-software.html" style="text-decoration: none;">
-                    <article class="blog-card">
-                        <div class="blog-card-content">
-                            <div class="blog-date">November 7, 2023</div>
-                            <h2>Audit Management Software: What Enterprises Can't Afford to Miss</h2>
-                            <p class="blog-excerpt">The critical features Fortune 1000 companies need in audit management systems to reduce preparation time by 70%.</p>
-                            <div class="blog-tags">
-                                <span class="blog-tag">Audit Software</span>
-                                <span class="blog-tag">Enterprise</span>
-                                <span class="blog-tag">Efficiency</span>
-                            </div>
-                            <span class="blog-read-more">Read Article</span>
+                <a href="blog/sec-compliance-documentation.html" class="insight-card">
+                    <div class="insight-card-body">
+                        <div class="insight-card-date">May 3, 2024</div>
+                        <h2>SEC Compliance Documentation: Complete Requirements Breakdown</h2>
+                        <p>Understanding the Securities and Exchange Commission's documentation requirements for financial services firms.</p>
+                        <div class="insight-card-tags">
+                            <span class="insight-card-tag">SEC</span>
+                            <span class="insight-card-tag">Finance</span>
                         </div>
-                    </article>
+                    </div>
                 </a>
 
-                <a href="blog/iso-certification-requirements.html" style="text-decoration: none;">
-                    <article class="blog-card">
-                        <div class="blog-card-content">
-                            <div class="blog-date">July 12, 2023</div>
-                            <h2>ISO Certification Requirements: A Step-by-Step Guide for Manufacturing</h2>
-                            <p class="blog-excerpt">How global manufacturers achieve and maintain ISO 9001, ISO 13485, and ISO 27001 certifications simultaneously.</p>
-                            <div class="blog-tags">
-                                <span class="blog-tag">ISO</span>
-                                <span class="blog-tag">Manufacturing</span>
-                                <span class="blog-tag">Certification</span>
-                            </div>
-                            <span class="blog-read-more">Read Article</span>
+                <a href="blog/finra-compliance-checklist.html" class="insight-card">
+                    <div class="insight-card-body">
+                        <div class="insight-card-date">February 19, 2024</div>
+                        <h2>FINRA Compliance Checklist: Annual Requirements for Broker-Dealers</h2>
+                        <p>The essential checklist every broker-dealer needs to pass FINRA examinations without issues.</p>
+                        <div class="insight-card-tags">
+                            <span class="insight-card-tag">FINRA</span>
+                            <span class="insight-card-tag">Checklist</span>
                         </div>
-                    </article>
+                    </div>
+                </a>
+
+                <a href="blog/audit-management-software.html" class="insight-card">
+                    <div class="insight-card-body">
+                        <div class="insight-card-date">November 7, 2023</div>
+                        <h2>Audit Management: What Enterprises Cannot Afford to Miss</h2>
+                        <p>The critical features Fortune 1000 companies need to reduce audit preparation time by 70%.</p>
+                        <div class="insight-card-tags">
+                            <span class="insight-card-tag">Audit</span>
+                            <span class="insight-card-tag">Enterprise</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="blog/iso-certification-requirements.html" class="insight-card">
+                    <div class="insight-card-body">
+                        <div class="insight-card-date">July 12, 2023</div>
+                        <h2>ISO Certification Requirements: A Step-by-Step Guide for Manufacturing</h2>
+                        <p>How global manufacturers achieve and maintain ISO 9001, ISO 13485, and ISO 27001 certifications simultaneously.</p>
+                        <div class="insight-card-tags">
+                            <span class="insight-card-tag">ISO</span>
+                            <span class="insight-card-tag">Manufacturing</span>
+                        </div>
+                    </div>
                 </a>
 
             </div>
@@ -412,8 +282,8 @@
                     <div class="logo">
                         <span class="logo-ava">AVA</span><span class="logo-compli">Compli</span>
                     </div>
-                    <p class="footer-tagline">Compliance. Training. Audits. Automated. Always Ready.</p>
-                    <p class="footer-black-card">The Black Card of Compliance™</p>
+                    <p class="footer-tagline">Compliance. Defense. Security. Automated. Always Ready.</p>
+                    <p class="footer-black-card">The Black Card of Compliance&trade;</p>
                 </div>
                 <div class="footer-contact">
                     <h4>Contact</h4>
@@ -423,9 +293,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 AVACompli. All rights reserved. | <a href="privacy.html" style="color: var(--teal); text-decoration: none;">Privacy Policy</a> | <a href="blog.html" style="color: var(--teal); text-decoration: none;">Blog</a></p>
+                <p>&copy; 2025 AVACompli. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="blog.html">Insights</a> | <a href="faq.html">FAQ</a></p>
+                <p class="footer-legal">AVACompli is a registered trademark. "The Black Card of Compliance" is a trademark of AVACompli.</p>
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
